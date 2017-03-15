@@ -30,6 +30,7 @@ function genFragment(
   inEntity: number
 ): Object {
   const nodeName = node.nodeName.toLowerCase();
+  consoel.log(nodeName);
 
   if (nodeName === '#text' && node.textContent !== '\n') {
     return createTextChunk(node, inlineStyle, inEntity);
